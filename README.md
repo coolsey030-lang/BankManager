@@ -72,7 +72,7 @@ java Main
 
 ═══════════ RÉCAPITULATIF DES COMPTES ═══════════
 
-  Compte: CC-001 | Solde: 1500,00 FCFA | Type: Compte Courant | Limite de découvert: 500,00 FCFA
+  Compte: CC-ABJ (Abidjan) | Solde: 150 000,00 FCFA | Type: Compte Courant | Limite de découvert: 50 000,00 FCFA
   ...
 ```
 

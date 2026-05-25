@@ -23,27 +23,27 @@ public class Main {
 
         // ---------------------------------------------------------
         // 1. Création d'un compte courant (CheckingAccount)
-        //    - Compte: "CC-001"
-        //    - Solde initial: 1500.00 FCFA
-        //    - Limite de découvert: 500.00 FCFA
+        //    - Agence: Abidjan (ABJ)
+        //    - Solde initial: 150 000 FCFA
+        //    - Limite de découvert: 50 000 FCFA
         // ---------------------------------------------------------
-        CheckingAccount checkingAccount = new CheckingAccount("CC-001", 1500.00, 500.00);
+        CheckingAccount checkingAccount = new CheckingAccount("CC-ABJ", 150000.00, 50000.00);
         System.out.println("[OK] Compte courant créé avec succès !");
 
         // ---------------------------------------------------------
         // 2. Création d'un compte d'épargne (SavingsAccount)
-        //    - Compte: "CE-001"
-        //    - Solde initial: 5000.00 FCFA
+        //    - Agence: Dakar (DKR)
+        //    - Solde initial: 500 000 FCFA
         // ---------------------------------------------------------
-        SavingsAccount savingsAccount = new SavingsAccount("CE-001", 5000.00);
+        SavingsAccount savingsAccount = new SavingsAccount("CE-DKR", 500000.00);
         System.out.println("[OK] Compte épargne créé avec succès !");
 
         // ---------------------------------------------------------
         // 3. Création d'un certificat de dépôt (COD)
-        //    - Compte: "COD-001"
-        //    - Montant du dépôt: 10000.00 FCFA
+        //    - Agence: Ouagadougou (OUA)
+        //    - Montant du dépôt: 1 000 000 FCFA
         // ---------------------------------------------------------
-        COD cod = new COD("COD-001", 10000.00);
+        COD cod = new COD("COD-OUA", 1000000.00);
         System.out.println("[OK] Certificat de dépôt créé avec succès !\n");
 
         // ---------------------------------------------------------
@@ -76,11 +76,11 @@ public class Main {
         System.out.println("========== MODIFICATION DES COMPTES ===========\n");
 
         // Modification du solde du compte courant via setBalance() (méthode héritée)
-        checkingAccount.setBalance(2000.00);
+        checkingAccount.setBalance(250000.00);
         System.out.println("[OK] Solde du compte courant mis à jour : " + String.format("%.2f", checkingAccount.getBalance()) + " FCFA");
 
         // Modification de la limite de découvert (propre à CheckingAccount)
-        checkingAccount.setLimit(1000.00);
+        checkingAccount.setLimit(100000.00);
         System.out.println("[OK] Limite de découvert mise à jour    : " + String.format("%.2f", checkingAccount.getLimit()) + " FCFA\n");
 
         // Affichage final des comptes après modifications
