@@ -48,6 +48,6 @@ public class CheckingAccount extends BankAccount {
      */
     @Override
     public String displayInfo() {
-        return super.displayInfo() + " | Type: Compte Courant | Limite de découvert: " + String.format("%.2f", limit) + " €";
+        return super.displayInfo() + " | Type: Compte Courant | Limite de découvert: " + String.format("%.2f", limit) + " FCFA";
     }
 }

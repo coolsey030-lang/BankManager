@@ -24,8 +24,8 @@ public class Main {
         // ---------------------------------------------------------
         // 1. Création d'un compte courant (CheckingAccount)
         //    - Compte: "CC-001"
-        //    - Solde initial: 1500.00 €
-        //    - Limite de découvert: 500.00 €
+        //    - Solde initial: 1500.00 FCFA
+        //    - Limite de découvert: 500.00 FCFA
         // ---------------------------------------------------------
         CheckingAccount checkingAccount = new CheckingAccount("CC-001", 1500.00, 500.00);
         System.out.println("[OK] Compte courant créé avec succès !");
@@ -33,7 +33,7 @@ public class Main {
         // ---------------------------------------------------------
         // 2. Création d'un compte d'épargne (SavingsAccount)
         //    - Compte: "CE-001"
-        //    - Solde initial: 5000.00 €
+        //    - Solde initial: 5000.00 FCFA
         // ---------------------------------------------------------
         SavingsAccount savingsAccount = new SavingsAccount("CE-001", 5000.00);
         System.out.println("[OK] Compte épargne créé avec succès !");
@@ -41,7 +41,7 @@ public class Main {
         // ---------------------------------------------------------
         // 3. Création d'un certificat de dépôt (COD)
         //    - Compte: "COD-001"
-        //    - Montant du dépôt: 10000.00 €
+        //    - Montant du dépôt: 10000.00 FCFA
         // ---------------------------------------------------------
         COD cod = new COD("COD-001", 10000.00);
         System.out.println("[OK] Certificat de dépôt créé avec succès !\n");
@@ -55,20 +55,20 @@ public class Main {
         System.out.println("  " + checkingAccount.displayInfo());
         System.out.println("  -> Accès aux attributs hérités :");
         System.out.println("    - Numéro de compte : " + checkingAccount.getAccount());
-        System.out.println("    - Solde            : " + String.format("%.2f", checkingAccount.getBalance()) + " €");
-        System.out.println("    - Limite découvert : " + String.format("%.2f", checkingAccount.getLimit()) + " €\n");
+        System.out.println("    - Solde            : " + String.format("%.2f", checkingAccount.getBalance()) + " FCFA");
+        System.out.println("    - Limite découvert : " + String.format("%.2f", checkingAccount.getLimit()) + " FCFA\n");
 
         // Affichage du compte d'épargne
         System.out.println("  " + savingsAccount.displayInfo());
         System.out.println("  -> Accès aux attributs hérités :");
         System.out.println("    - Numéro de compte : " + savingsAccount.getAccount());
-        System.out.println("    - Solde            : " + String.format("%.2f", savingsAccount.getBalance()) + " €\n");
+        System.out.println("    - Solde            : " + String.format("%.2f", savingsAccount.getBalance()) + " FCFA\n");
 
         // Affichage du certificat de dépôt
         System.out.println("  " + cod.displayInfo());
         System.out.println("  -> Accès aux attributs hérités :");
         System.out.println("    - Numéro de compte : " + cod.getAccount());
-        System.out.println("    - Solde            : " + String.format("%.2f", cod.getBalance()) + " €\n");
+        System.out.println("    - Solde            : " + String.format("%.2f", cod.getBalance()) + " FCFA\n");
 
         // ---------------------------------------------------------
         // Démonstration de la modification des attributs hérités
@@ -77,11 +77,11 @@ public class Main {
 
         // Modification du solde du compte courant via setBalance() (méthode héritée)
         checkingAccount.setBalance(2000.00);
-        System.out.println("[OK] Solde du compte courant mis à jour : " + String.format("%.2f", checkingAccount.getBalance()) + " €");
+        System.out.println("[OK] Solde du compte courant mis à jour : " + String.format("%.2f", checkingAccount.getBalance()) + " FCFA");
 
         // Modification de la limite de découvert (propre à CheckingAccount)
         checkingAccount.setLimit(1000.00);
-        System.out.println("[OK] Limite de découvert mise à jour    : " + String.format("%.2f", checkingAccount.getLimit()) + " €\n");
+        System.out.println("[OK] Limite de découvert mise à jour    : " + String.format("%.2f", checkingAccount.getLimit()) + " FCFA\n");
 
         // Affichage final des comptes après modifications
         System.out.println("========== ÉTAT FINAL DES COMPTES ============\n");

@@ -72,7 +72,7 @@ java Main
 
 ═══════════ RÉCAPITULATIF DES COMPTES ═══════════
 
-  Compte: CC-001 | Solde: 1500,00 € | Type: Compte Courant | Limite de découvert: 500,00 €
+  Compte: CC-001 | Solde: 1500,00 FCFA | Type: Compte Courant | Limite de découvert: 500,00 FCFA
   ...
 ```
 

@@ -65,6 +65,6 @@ public class BankAccount {
      * @return Une chaîne formatée avec les détails du compte
      */
     public String displayInfo() {
-        return "Compte: " + account + " | Solde: " + String.format("%.2f", balance) + " €";
+        return "Compte: " + account + " | Solde: " + String.format("%.2f", balance) + " FCFA";
     }
 }
